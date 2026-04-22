@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Antunes | Bibliotecário & Pesquisador</title>
+    <!-- Tailwind CSS para estilização rápida e moderna -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Ícones -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Fonte moderna e legível -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            700: '#15803d',
+                            900: '#14532d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilos adicionais para animações suaves */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navegação -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md border-b border-gray-200 z-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-xl font-bold text-gray-900 tracking-tight">Rafael Antunes dos Santos<span class="text-brand-500">.</span></a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#sobre" class="text-gray-600 hover:text-brand-500 px-3 py-2 text-sm font-medium transition-colors">Sobre</a>
+                    <a href="#trajetoria" class="text-gray-600 hover:text-brand-500 px-3 py-2 text-sm font-medium transition-colors">Trajetória</a>
+                    <a href="#projetos" class="text-gray-600 hover:text-brand-500 px-3 py-2 text-sm font-medium transition-colors">Projetos</a>
+                    <a href="#publicacoes" class="text-gray-600 hover:text-brand-500 px-3 py-2 text-sm font-medium transition-colors">Publicações</a>
+                    <a href="#contato" class="text-gray-600 hover:text-brand-500 px-3 py-2 text-sm font-medium transition-colors">Contato</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero (Início) -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 fade-in">
+        <div class="flex-1 space-y-6 text-center md:text-left">
+            <h2 class="text-brand-500 font-semibold tracking-wide uppercase text-sm">Olá, seja bem-vindo(a)</h2>
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight font-serif">
+                Bibliotecário & <br> Pesquisador
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto md:mx-0">
+                Explorando as interseções entre a Ciência da Informação, Tecnologia e Educação. Doutorando no PPGIE/UFRGS e apaixonado por organizar o conhecimento humano.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
+                <a href="#projetos" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors shadow-lg">Ver Projetos</a>
+                <a href="#contato" class="bg-white text-gray-900 border border-gray-300 px-6 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors shadow-sm">Entrar em contato</a>
+            </div>
+        </div>
+        <div class="w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden border-4 border-white shadow-xl flex-shrink-0 bg-gray-200">
+            <!-- DICA: Troque o src abaixo pelo link da sua foto -->
+            <img src="imagens/Eu.jpg" alt="Sua Foto" class="w-full h-full object-cover">
+        </div>
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1 space-y-6">
+                    <h2 class="text-3xl font-bold text-gray-900 font-serif">Sobre Mim</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Com 20 anos de atuação na Biblioteconomia, minha trajetória sempre foi guiada pela curiosidade e pela busca por melhores formas de organizar e acessar informações.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Atualmente, sou doutorando no Programa de Pós-Graduação em Informática na Educação (PPGIE) da UFRGS. Minha pesquisa combina análise de coocorrência de palavras e inteligência artificial generativa para tratar do delineamento do escopo temático de projetos de pesquisa no ensino superior.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Além da pesquisa acadêmica, venho explorando o mundo da programação (Python) para criar soluções práticas para estudantes, pesquisadores, bibliotecários e empresas.
+                    </p>
+                </div>
+                <div class="order-1 md:order-2 grid grid-cols-2 gap-4">
+                    <div class="bg-brand-50 p-6 rounded-2xl">
+                        <i class="ph ph-books text-4xl text-brand-500 mb-4"></i>
+                        <h3 class="font-bold text-gray-900 mb-2">Bibliotecário-Documentalista</h3>
+                        <p class="text-sm text-gray-600">20 anos de experiência prática e gestão de acervos.</p>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-2xl">
+                        <i class="ph ph-graduation-cap text-4xl text-blue-500 mb-4"></i>
+                        <h3 class="font-bold text-gray-900 mb-2">Academia</h3>
+                        <p class="text-sm text-gray-600">Doutorando UFRGS (PPGIE). Foco em análise de coocorrência de palavras-chave.</p>
+                    </div>
+                    <div class="bg-purple-50 p-6 rounded-2xl">
+                        <i class="ph ph-code text-4xl text-purple-500 mb-4"></i>
+                        <h3 class="font-bold text-gray-900 mb-2">Desenvolvimento</h3>
+                        <p class="text-sm text-gray-600">Python, Streamlit e visualização de dados.</p>
+                    </div>
+                    <div class="bg-orange-50 p-6 rounded-2xl">
+                        <i class="ph ph-brain text-4xl text-orange-500 mb-4"></i>
+                        <h3 class="font-bold text-gray-900 mb-2">Epistemologia</h3>
+                        <p class="text-sm text-gray-600">Comportamento de uso da informação, Bibliometria, Tecnologias educacionais e Aprendizagem significativa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Currículo / Trajetória -->
+    <section id="trajetoria" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 font-serif mb-4">Trajetória Acadêmica e Profissional</h2>
+                <p class="text-gray-600">Um resumo dos meus principais marcos ao longo dos anos.</p>
+            </div>
+
+            <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-300 before:to-transparent">
+                
+                <!-- Item 1: Doutorado -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-brand-500 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="ph ph-student"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl bg-white shadow-sm border border-gray-100 transition-all hover:shadow-md">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-bold text-gray-900 text-lg">Doutorado em Informática na Educação</h3>
+                            <span class="text-sm font-medium text-brand-500 bg-brand-50 px-2 py-1 rounded">2022 - Atual</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-3">UFRGS - PPGIE | Bolsista CAPES</p>
+                        <p class="text-gray-600 text-sm">Desenvolvimento do sistema Delinéia (IA generativa) e análise bibliométrica por palavras-chave via OpenAlex.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2: Faculdade Escoop -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-blue-500 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="ph ph-books"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl bg-white shadow-sm border border-gray-100 transition-all hover:shadow-md">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-bold text-gray-900 text-lg">Analista Técnico em Biblioteconomia</h3>
+                            <span class="text-sm font-medium text-gray-500 bg-gray-100 px-2 py-1 rounded">2022 - 2023</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-3">Faculdade Escoop</p>
+                        <p class="text-gray-600 text-sm">Planejamento e gestão de biblioteca, criação do Clube de Leitura, organização de eventos e relatórios para avaliações do MEC.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3: Santander Cultural & Mestrado -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-orange-400 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="ph ph-palette"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl bg-white shadow-sm border border-gray-100 transition-all hover:shadow-md">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-bold text-gray-900 text-lg">Bibliotecário & Mestrado</h3>
+                            <span class="text-sm font-medium text-gray-500 bg-gray-100 px-2 py-1 rounded">2013 - 2019</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-3">Santander Cultural | PPGCOM UFRGS</p>
+                        <p class="text-gray-600 text-sm">Gestão de acervo de arte contemporânea, mediação de leitura e capacitação em BibLivre. Obtenção do título de Mestre em Comunicação e Informação (2015).</p>
+                    </div>
+                </div>
+
+                <!-- Item 4: Implantações & Graduação -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-gray-400 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <i class="ph ph-buildings"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl bg-white shadow-sm border border-gray-100 transition-all hover:shadow-md">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-bold text-gray-900 text-lg">Gestão de Bibliotecas & Graduação</h3>
+                            <span class="text-sm font-medium text-gray-500 bg-gray-100 px-2 py-1 rounded">2001 - 2013</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-3">Senac, QI, Faculdades e ONGs</p>
+                        <p class="text-gray-600 text-sm">Graduação em Biblioteconomia (UFRGS). Atuação em coordenação de redes, implantação de bibliotecas (IMED, Fasurgs) e projetos sociais de inclusão pela leitura (ONG SOMOS).</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="http://lattes.cnpq.br/5228660998907867" target="_blank" class="inline-flex items-center gap-2 text-brand-700 font-medium hover:text-brand-900 transition-colors">
+                    <i class="ph ph-file-pdf text-xl"></i>
+                    Acessar Currículo Lattes
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos (Delinéia) -->
+    <section id="projetos" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold font-serif mb-4">Projetos em Destaque</h2>
+                <p class="text-gray-400">Ferramentas que desenvolvi para auxiliar na pesquisa e análise de dados.</p>
+            </div>
+
+            <div class="bg-gray-800 rounded-3xl overflow-hidden border border-gray-700 shadow-2xl flex flex-col md:flex-row">
+                <div class="md:w-1/2 p-10 flex flex-col justify-center">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="bg-brand-500/20 p-3 rounded-lg">
+                            <i class="ph ph-app-window text-3xl text-brand-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Delinéia</h3>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Uma aplicação web desenvolvida em <strong>Python</strong> e <strong>Streamlit</strong>. O Delinéia foi criado para facilitar o delineamento temático de pesquisas no ensino superior e analisar dados bibliométricos de palavras-chave.
+                    </p>
+                    <ul class="space-y-3 mb-8 text-gray-400 text-sm">
+                        <li class="flex items-center gap-2"><i class="ph ph-check-circle text-brand-500"></i> Processamento ágil de dados</li>
+                        <li class="flex items-center gap-2"><i class="ph ph-check-circle text-brand-500"></i> Interface intuitiva para pesquisadores</li>
+                        <li class="flex items-center gap-2"><i class="ph ph-check-circle text-brand-500"></i> Exportação de relatórios</li>
+                    </ul>
+                    <div class="flex gap-4">
+                        <a href="https://rafaelantunes123-delineia.hf.space" target="_blank" class="bg-brand-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-brand-600 transition-colors inline-flex items-center gap-2">
+                            Acessar App <i class="ph ph-arrow-right"></i>
+                        </a>
+                        <a href="https://github.com/rderafa-rgb" target="_blank" class="bg-transparent border border-gray-500 text-gray-300 px-6 py-2 rounded-lg font-medium hover:bg-gray-700 hover:text-white transition-colors inline-flex items-center gap-2">
+                            <i class="ph ph-github-logo"></i> Código Fonte
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 bg-gray-700 p-8 flex items-center justify-center relative overflow-hidden">
+                    <!-- Placeholder de imagem do app. Substitua pelo link de um print da tela do Streamlit -->
+                    <div class="bg-gray-800 w-full h-64 rounded-xl border border-gray-600 shadow-lg p-2 flex flex-col relative z-10">
+                        <div class="flex gap-1.5 mb-2 px-2">
+                            <div class="w-2.5 h-2.5 rounded-full bg-red-400"></div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-yellow-400"></div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-green-400"></div>
+                        </div>
+                        <div class="flex-1 bg-white rounded border border-gray-700 flex items-start justify-center overflow-hidden">
+                            <img src="imagens/Delineia.png" alt="Tela inicial do app Delinéia" class="w-full h-full object-contain object-top pt-2">
+                        </div>
+                    </div>
+                    <!-- Elementos decorativos -->
+                    <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-brand-500/20 rounded-full blur-3xl"></div>
+                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-blue-500/20 rounded-full blur-3xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Publicações -->
+    <section id="publicacoes" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 font-serif mb-4">Publicações em Destaque</h2>
+                <p class="text-gray-600">Artigos científicos, capítulos e trabalhos apresentados em eventos acadêmicos.</p>
+            </div>
+
+            <!-- Artigos Aceitos -->
+            <div class="mb-12">
+                <h3 class="text-xl font-bold text-brand-700 mb-6 flex items-center gap-2">
+                    <i class="ph ph-clock-clockwise"></i> Aceitos para publicação
+                </h3>
+                <ul class="space-y-4">
+                    <li class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            <strong>SANTOS, R.A.</strong>; BENI, P.F.; REATEGUI, E.B.; BARONE, D.A.C. Justiça, responsabilidade, transparência e ética (FATE) em sistemas de recomendação na educação: uma análise de coocorrência de palavras. <em>Revista Ibero-americana de Ciência da Informação</em>, v.19, n.2, 2026.
+                        </p>
+                        <a href="https://doi.org/10.26512/rici.v19.n2.2026.60555" target="_blank" class="text-brand-600 hover:underline mt-2 inline-block text-xs font-medium">
+                            <i class="ph ph-link"></i> Doi: https://doi.org/10.26512/rici.v19.n2.2026.60555
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Artigos Publicados -->
+            <div>
+                <h3 class="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                    <i class="ph ph-books"></i> Trabalhos Publicados
+                </h3>
+                <ul class="space-y-4">
+                    <!-- Item 1 -->
+                    <li class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            <strong>SANTOS, R.A.</strong>; REATEGUI, E.B. Uso de inteligência artificial generativa e análise de palavras-chave para apoiar o planejamento de projetos de pesquisa no ensino superior. <em>RELATEC: Revista Latinoamericana de Tecnología Educativa</em>, v.24, n.2, p.87–104, 2025.
+                        </p>
+                        <a href="https://doi.org/10.17398/1695-288X.24.2.87" target="_blank" class="text-brand-600 hover:underline mt-2 inline-block text-xs font-medium">
+                            <i class="ph ph-link"></i> Doi: https://doi.org/10.17398/1695-288X.24.2.87
+                        </a>
+                    </li>
+                    <!-- Item 2 -->
+                    <li class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            <strong>SANTOS, R.A.</strong>; REATEGUI, E.B.; CAREGNATO, S.E. Análise de coocorrência de palavras na pesquisa brasileira em HIV/AIDS indexada na Web of Science no período 1993-2020. <em>Informação & Informação</em>, v.27, n.2, p.248–273, 2022.
+                        </p>
+                        <div class="flex flex-wrap gap-4 mt-2">
+                            <a href="https://doi.org/10.5433/1981-8920.2022v27n2p248" target="_blank" class="text-brand-600 hover:underline text-xs font-medium">
+                                <i class="ph ph-link"></i> Doi: 10.5433/1981-8920.2022v27n2p248
+                            </a>
+                            <a href="https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/45335" target="_blank" class="text-blue-600 hover:underline text-xs font-medium">
+                                <i class="ph ph-file-text"></i> Disponível em: OJS UEL
+                            </a>
+                        </div>
+                    </li>
+                    <!-- Item 3 -->
+                    <li class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            REATEGUI, E.B.; BIGOLIN, M.; CARNIATO, M.; <strong>SANTOS, R.A.</strong> Evaluating the performance of SOBEK text mining keyword extraction algorithm. In: HOLZINGER, A. et al. (ed.). <em>Machine Learning and Knowledge Extraction: CD-MAKE 2022</em>. Cham: Springer, 2022. p.233–243. (Lecture Notes in Computer Science, 13480).
+                        </p>
+                        <a href="https://doi.org/10.1007/978-3-031-14463-9_15" target="_blank" class="text-brand-600 hover:underline mt-2 inline-block text-xs font-medium">
+                            <i class="ph ph-link"></i> Doi: https://doi.org/10.1007/978-3-031-14463-9_15
+                        </a>
+                    </li>
+                    <!-- Item 4 -->
+                    <li class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            <strong>SANTOS, R.A.</strong>; REATEGUI, E. B. ; CAREGNATO, S. E. Aspectos metodológicos adotados na execução do conceito de coocorrência de palavras em dados de pesquisa do HIV/AIDS. In: <em>III Latmetrics</em>, 2021, Antioquia. Anais do III Latmetrics, 2021.
+                        </p>
+                    </li>
+                    <!-- Item 5 -->
+                    <li class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            SEMELER, A.R.; <strong>SANTOS, R.A.</strong>; SOARES, K.U. Análise de domínio aplicada aos estudos fronteiriços brasileiros: metadados de publicações científicas de acesso aberto extraídos da plataforma Lattes. In: <em>ANUÁRIO Unbral das fronteiras brasileiras</em>: volume 1. Porto Alegre: Instituto de Geociências, 2014. p.37–65.
+                        </p>
+                    </li>
+                    <!-- Item 6 -->
+                    <li class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            <strong>SANTOS, R.A.</strong>; CAREGNATO, S.E. Crescimento da produção científica brasileira em HIV/Aids no período 1989-2013. In: <em>4º Encontro Brasileiro de Bibliometria e Cientometria</em>, 2014, Recife. Anais... Recife, 2014. v. 4. p. A46.
+                        </p>
+                    </li>
+                    <!-- Item 7 -->
+                    <li class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            <strong>SANTOS, R.A.</strong>; CARDOSO, R. C. Avaliação de repositórios institucionais: o Brasil no ranking webométrico. In: <em>CONGRESSO BRASILEIRO DE BIBLIOTECONOMIA, DOCUMENTAÇÃO E CIÊNCIA DA INFORMAÇÃO</em>, 2013, Florianópolis. Anais... Brasília: FEBAB, 2013. v. 25. p. 1799-1813.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="http://lattes.cnpq.br/5228660998907867" target="_blank" class="inline-flex items-center gap-2 text-brand-700 font-medium hover:text-brand-900 transition-colors">
+                    <i class="ph ph-arrow-square-out text-xl"></i>
+                    Ver currículo completo no Lattes
+                </a>
+            </div>
+        </div>
+    
+    </section>
+    <!-- Seção Contato -->
+    <section id="contato" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 font-serif mb-6">Vamos Conversar?</h2>
+            <p class="text-gray-600 mb-10 text-lg">
+                Seja para discutir sobre Bibliometria, Filosofia da Ciência, ou para parcerias envolvendo desenvolvimento em Python, sinta-se à vontade para me contatar.
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="mailto:rderafa@gmail.com" class="flex flex-col items-center gap-2 p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:border-brand-500 hover:shadow-md transition-all group w-40">
+                    <i class="ph ph-envelope-simple text-3xl text-gray-400 group-hover:text-brand-500 transition-colors"></i>
+                    <span class="font-medium text-gray-900">E-mail</span>
+                </a>
+                <a href="https://www.linkedin.com/in/rafael-antunes-dos-santos-4b99261a1/" target="_blank" class="flex flex-col items-center gap-2 p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:border-[#0077b5] hover:shadow-md transition-all group w-40">
+                    <i class="ph ph-linkedin-logo text-3xl text-gray-400 group-hover:text-[#0077b5] transition-colors"></i>
+                    <span class="font-medium text-gray-900">LinkedIn</span>
+                </a>
+                <a href="http://lattes.cnpq.br/5228660998907867" target="_blank" class="flex flex-col items-center gap-2 p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:border-gray-900 hover:shadow-md transition-all group w-40">
+                    <i class="ph ph-read-cv-logo text-3xl text-gray-400 group-hover:text-gray-900 transition-colors"></i>
+                    <span class="font-medium text-gray-900">Lattes</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-50 py-8 border-t border-gray-200">
+        <div class="max-w-5xl mx-auto px-4 text-center text-gray-500 text-sm flex flex-col items-center">
+            <p>&copy; 2026 Rafael Antunes.</p>
+            <p class="mt-2 mb-4">Desenvolvido com Curiosidade acadêmica, Gemini, Canvas e VSCode.</p>
+            
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.pt_BR" target="_blank" class="hover:opacity-80 transition-opacity">
+                <img alt="Licença Creative Commons" src="imagens/cc_by_nc_nd.png" class="h-8">
+            </a>
+            <p class="mt-2 text-xs text-gray-400 max-w-md">
+                Este site está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.pt_BR" target="_blank" class="underline hover:text-gray-600">Creative Commons Atribuição-NãoComercial-SemDerivações 4.0 Internacional</a>.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
